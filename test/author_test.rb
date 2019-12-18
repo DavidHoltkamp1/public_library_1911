@@ -16,7 +16,7 @@ class AuthorTest < Minitest::Test
   def test_it_initializes
     assert_equal "Charlotte", @charlotte_bronte.first_name
     assert_equal "Bronte", @charlotte_bronte.last_name
-    assert_equal "Charlotte Bronte", @charlotte_bronte.name 
+    assert_equal "Charlotte Bronte", @charlotte_bronte.name
   end
 
   def test_author_starts_with_no_books_but_writes_books
@@ -29,7 +29,6 @@ class AuthorTest < Minitest::Test
     assert_equal [jane_eyre], @charlotte_bronte.books
 
     villette = @charlotte_bronte.write("Villette", "1853")
-
     assert_equal [jane_eyre, villette], @charlotte_bronte.books
   end
 end
